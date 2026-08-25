@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT PROFILE</title>
+
+    <!-- =====================================
+    STEP 1 CONNECT HTML AND CSS
+    TEACH:
+    -WHAT CSS IS
+    -EXTERNAL CSS
+    -THE <link> tag       
+    -CSS FILE STRUCTURE
+   =========================================-->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+      <!-- =====================================
+       STEP 2-HTML STRUCTURE + BASIC SELECTORS
+       TEACH:
+       -HTML provides structure
+       -CSS provides presentation
+       -Element selectors
+       -color
+       -background-color
+       -font-size
+       -font-family 
+       -text-align
+    =========================================-->
+
+  <header class="header">
+  
+      <div class="container">
+      
+         <h1 class="logo">Iremide</h1>
+          
+            <!-- =====================================
+               STEP 3 - NAVIGATION
+               TEACH:
+               -Classes
+               -Styling links
+               -text-decoration
+               -display
+               -inline vs block
+            =========================================-->
+             
+             <nav class="navbar">
+                  
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+
+             </nav>  
+         
+        </div>
+    
+    </header>
+
+    
+     <!-- =====================================
+        STEP 4- HERO SECTION
+        TEACH:
+        -Background
+        -padding
+        -width
+        -height
+        -font-size
+        -font-weight
+        -button styling
+    =========================================-->
+
+    <section id="home" class="hero">
+
+        <div class="container">
+            <h2>Hello, I'm Iremide</h2>
+
+            <p>
+                I am a student learning Web Development
+            </p>
+
+            <a href="#projects" class="btn">
+                View My Projects
+            </a>
+
+        </div>
+
+    </section>
+
+    
+     <!-- =====================================
+               STEP 5 - BOX MODEL
+               TEACH:
+               -Content
+               -Padding
+               -Border
+               -Margin
+               -width
+               -max-width
+               -box-sizing
+         =========================================-->
+
+    <section id="about" class="section">
+      
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+
+            <div class="about-box">
+                <img src="./images/20250223_171412.jpg"
+                alt="My profile  picture" width="250px" height="250px"
+                >
+
+            <div>
+
+                <h3>Who AM I?</h3>
+
+                <p>
+                    My name is Iremide. I am learning how to
+                    build websites using HTML and CSS.
+                </p>
+
+                <p>
+                    I enjoy technology and creating stuff.
+                </p>
+
+                </div>
+            
+           </div>
+    
+      </div>
+    
+    
+    </section>
+
+    <!-- =====================================
+               STEP 6 - FLEXBOX
+               TEACH:
+               -display: flex
+               -flex-direction
+               -justify-content
+               -allign-items
+               -gap
+               -flex-wrap
+         =========================================-->
+
+         <section id="skills" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">My Skills</h2>
+
+            <div class="skills-container">
+
+                <div class="skill-card">
+                    <h3>HTML</h3>
+                    <p>Structure of websites</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>CSS</h3>
+                    <p>Design and styling</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Website functionality</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         STEP 7 — CSS GRID
+         TEACH:
+         - display: grid
+         - grid-template-columns
+         - repeat()
+         - 1fr
+         - gap
+         ========================================================= -->
+
+    <section id="projects" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">My Projects</h2>
+
+            <div class="projects-container">
+
+                <div class="project-card">
+
+                    <img
+                        src="./images/20250504_112411.jpg"
+                        alt="School website"
+                        width="500px" height="500px"
+                    >
+
+                    <div class="project-content">
+
+                        <h3>School Website</h3>
+
+                        <p>
+                            A simple school website built using
+                            HTML and CSS.
+                        </p>
+
+                        <a href="#" class="project-link">
+                            View Project
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <img
+                        src="./images/OIP.webp"
+                        alt="Restaurant website"
+                        width="1000px" height="500px"
+                    >
+
+                    <div class="project-content">
+
+                        <h3>Restaurant Website</h3>
+
+                        <p>
+                            A restaurant website designed using
+                            HTML and CSS.
+                        </p>
+
+                        <a href="#" class="project-link">
+                            View Project
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <img
+                        src="./images/restaur 2 image.webp"
+                        alt="Portfolio website"
+                        width="500px" height="500px"
+                    >
+
+                    <div class="project-content">
+
+                        <h3>Portfolio Website</h3>
+
+                        <p>
+                            My personal portfolio website.
+                        </p>
+
+                        <a href="#" class="project-link">
+                            View Project
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         STEP 8 — FORMS
+         TEACH:
+         - input styling
+         - textarea styling
+         - width
+         - padding
+         - border
+         - border-radius
+         - outline
+         ========================================================= -->
+
+    <section id="contact" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">Contact Me</h2>
+
+
+            <form class="contact-form">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                >
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                >
+
+                <textarea
+                    rows="5"
+                    placeholder="Your Message"
+                ></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+            <br><br>
+            
+            <form class="contact-form">
+                <label>Full name:</label>
+                <input placeholder="Full name" type="text">
+                <br>
+                
+                <label>Address:</label>
+                <input placeholder="Address" type="text">
+                <br>
+                
+                <label>Country</label>
+                <select>
+                <option selected>Nil</option>
+                <option>Bostwana</option>
+                <option>Nigeria</option>
+                <option>Ghana</option>
+                <option>South Africa</option>
+                <option>Kenya</option>
+                </select> 
+                <br>
+
+                <label>State</label>
+                <input type="text" placeholder="state">
+                <br>
+
+                <label>Email</label>
+                <input type="email" placeholder="Email">
+                <br>
+
+                <label>Phone number</label>
+                <input type="number" placeholder="Number">
+                <br>
+
+                <label>Course</label>
+                <input type="text" placeholder="course">
+                <br>
+
+
+                <label>Password</label>
+                <input type="password" placeholder="password">
+                <br>
+
+                <button type="reset"> Reset </button>
+
+                <button type="button" onclick="window.location.href='./validation.html'">
+                Submit
+                </button>
+            </form>
+
+     
+        </div>
+
+    </section>
+<br><br>
+
+
+
+    <!-- =========================================================
+         STEP 9 — FOOTER
+         TEACH:
+         - background
+         - color
+         - padding
+         - text-align
+         ========================================================= -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Iremide. All Rights Reserved.
+        </p>
+
+    </footer>
+    <!-- ASSIGNMENT  Create a form with full name, address, country, state. email, phone number, course, passowrd, reset button{all the things reset}, link the submit button to a file called validation.html called successfully registered. -->
+    <!-- Creat a table that has serial number, name, class, address, id, remark with the grid lines spaces in between and at the end put feedback   -->
+
+    
+</body>
+</html>

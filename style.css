@@ -1,0 +1,527 @@
+/* ==============================================
+    STEP 1- CSS RESET + BASIC SETUP
+
+    LEARN:
+    -Universal selector
+    -margin
+    -padding
+    -box-sizing
+    -font-family
+==============================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  background-color: gold;
+}
+
+/* ==============================================
+    STEP 2- CONTAINER
+
+    LEARN:
+    -width
+    -max-width
+    -margin: auto
+    -reusable classes
+==============================================*/
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ==============================================
+    STEP 3- HEADER
+
+    LEARN:
+    - background-color
+    - padding
+    - color
+==============================================*/
+
+.header {
+  background-color: gold;
+  color: black;
+  padding: 20px 0;
+}
+
+/* ==============================================
+    STEP 4- NAVBAR + FLEXBOX
+
+    LEARN:
+    - display: flex
+    - justify-content
+    - align-items
+    - gap
+==============================================*/
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  gap: 30px;
+}
+
+/* ==============================================
+    STEP 5- NAVBAR + FLEXBOX
+
+    LEARN:
+    - display: flex
+    - justify-content
+    - align-items
+    - gap
+==============================================*/
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ==============================================
+    STEP 6- HERO SECTION
+
+    LEARN:
+    - padding
+    - text-align
+    - font-size
+    - line-height
+==============================================*/
+
+.hero {
+  background-color: black;
+  color: gold;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* ==============================================
+    STEP 7 - BUTTON
+
+    LEARN:
+    - padding
+    - border
+    - border-radius
+    - display
+    - cursor
+==============================================*/
+
+.btn {
+  display: inline-block;
+
+  background-color: gold;
+  color: black;
+
+  padding: 12px 25px;
+
+  border-radius: 5px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+}
+
+/* ==============================================
+    STEP 8- SECTION SPACING
+
+    LEARN:
+    - margin
+    - padding
+==============================================*/
+
+.section {
+  padding: 70px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+/* ==============================================
+    STEP 9- BOX MODEL
+
+    LEARN:
+    - padding
+    - border
+    - border-radius
+    - box-shadow
+==============================================*/
+
+.about-box {
+  background-color: black;
+
+  padding: 30px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  box-shadow: 0 5px 15px black;
+
+  color: white;
+}
+
+/* ==============================================
+    STEP 10- IMAGE
+
+    LEARN:
+    - width
+    - height
+    - object-fit
+    - border-radius
+ ==============================================*/
+
+.about-box img {
+  width: 250px;
+  height: 250px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+/* ==============================================
+    STEP 11 - FLEXBOX FOR ABOUT SECTION
+
+    LEARN:
+    -flex
+    -align items
+    -gap
+==============================================*/
+
+.about-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+/* ==============================================
+    STEP 12- SKILLS WITH FLEXBOX
+
+    LEARN:
+    - flex-wrap
+    - flex
+    - gap
+==============================================*/
+
+.skills-container {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+/* ==============================================
+    STEP 13- CARD DESIGN
+
+    LEARN:
+    - width
+    - padding
+    - border
+    - box-shadow
+    - border-radius
+==============================================*/
+
+.skill-card {
+  background-color: black;
+  color: gold;
+  width: 30%;
+
+  padding: 30px;
+
+  text-align: center;
+
+  border-radius: 10px;
+
+  box-shadow: 0 5px 15px rgba(28, 31, 214, 0.08);
+}
+
+/* ==============================================
+    STEP 14- CSS GRID
+
+    LEARN:
+    - display: grid
+    - grid-template-columns
+    -repeat()
+    -1fr
+==============================================*/
+
+.projects-container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 3fr);
+
+  gap: 25px;
+}
+
+/* ==============================================
+    STEP 15 - PROJECT CARD
+
+    LEARN:
+    - overflow
+    -border-radius
+==============================================*/
+
+.project-card {
+  background-color: black;
+  color: gold;
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* ==============================================
+    STEP 16 - PROJECT IMAGE
+
+    LEARN:
+    - width
+    - height
+    -object-fit
+==============================================*/
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+
+  object-fit: contain;
+}
+
+/* ==============================================
+    STEP 17- PROJECT CONTAINER
+
+    LEARN:
+    - padding
+    - line height
+==============================================*/
+
+.project-content {
+  padding: 20px;
+}
+
+.projects-content p {
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* ==============================================
+    STEP 18- HOVER EFFECT
+
+    LEARN:
+    - hover
+    -color changes
+==============================================*/
+
+.navbar a:hover {
+  color: #60a5fa;
+  font-size: 20px;
+}
+
+/* ==============================================
+    STEP 19- TRANSITIONS
+
+    LEARN:
+    - transition
+    - smooth effects
+==============================================*/
+
+.navbar a,
+.project-link,
+.btn {
+  transition: 0.9s;
+}
+
+/* ==============================================
+    STEP 20 - FORM
+
+    LEARN:
+    - width
+    - padding
+    - border
+    - border-radius
+    - outline
+==============================================*/
+
+.contact-form {
+  max-width: 600px;
+
+  margin: auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+
+  padding: 15px;
+
+  border: 1px solid black;
+
+  border-radius: 15px;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+/* ==============================================
+    STEP 21- FORM FOCUS
+
+    LEARN:
+    - focus
+==============================================*/
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: blue;
+}
+
+/* ==============================================
+    STEP 22- FORM BUTTON
+
+    LEARN:
+    - button styling
+    - cursor
+    - hover
+==============================================*/
+
+.contact-form button {
+  background-color: black;
+
+  color: white;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: black;
+}
+
+/* ==============================================
+    STEP 23- POSITIONING
+
+    LEARN:
+    - position: relative
+    - position: absolute
+    - top / right /  bottom / left
+
+    Add this
+==============================================*/
+
+.project-card {
+  position: relative;
+}
+
+/* ==============================================
+    STEP 24 - FOOTER
+
+    LEARN:
+    - background
+    - color
+    - padding
+    - text-align
+==============================================*/
+
+.footer {
+  background-color: black;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 30px;
+}
+
+.container a{
+  text-decoration: none;
+  color: white;
+}
+
+/* ==============================================
+    STEP 25 -
+
+    LEARN:
+    - background
+    - color
+    - padding
+    - text-align
+==============================================*/
+
+@media (max-width: 768px) {
+ 
+/* NAVBAR */
+ .header .container {
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+/* ABOUT */
+
+.about-box {
+  flex-direction: column;
+
+  text-align: center;
+}
+
+/* SKILLS */
+
+.skill-card {
+  width: 100%;
+}
+
+
+
+/* HERO  */
+
+.hero h2 {
+  font-size: 35px;
+}
+
+
+}
